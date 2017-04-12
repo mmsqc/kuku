@@ -1,13 +1,22 @@
 @charset "UTF-8";
-h1{
-    font-size: 60px;
-    color: black;
-    text-align: center;
-    margin-top: 200px;
+body{
+    background-color: #272727;
 }
-h2{
-    font-size: 50px;
+.header{
+    height: 70px;
+    background-color: #121212;
+}
+.core{
+    width: 1050px;
+    margin: 0 auto;
+}
+.header .core h1{
+    color: white;
+    font-size: 34px;
+    line-height: 70px;
+}
+.header .core span{
     color: red;
-    text-align: center;
-    margin-top: 200px;
+    font-size: 34px;
+    line-height: 70px;
 }
