@@ -5,26 +5,47 @@
     <meta name="keywords" content="吴飞的博客，自我介绍">
     <meta name="description" content="吴飞的博客">
     <title>吴飞的博客</title>
-    <link rel="icon" href="./images/ico.png"/>
-    <link rel="stylesheet" href="./css/base.css"/>
-    <style type="text/css">
-   
-    </style>
+    <link rel="icon" href="../images/ico.png"/>
+    <link rel="stylesheet" href="../css/base_v1.0.1.css"/>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css"/>
+    <script src="http://www.jq22.com/jquery/vue.min.js"></script>
 </head>
 <body>
+<div id="app" class="container">
     <div class="header">
-        <div class="core">
-            <h1><span>吴飞</span>的博客</h1>
-            <p>hello word</p>
+    <div class="core">
+        <h1><span>吴飞</span>的博客</h1>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9 bgd_clr_red">
+            <h1>正文内容</h1>
+        </div>
+        <div class="col-md-3 bgd_clr_yellow">
+            <h2>侧边栏</h2>
         </div>
     </div>
-    <div class="nav"></div>
-    <div class="body"></div>
-    <div class="footer"></div>
 
 
 
+
+
+
+
+
+</div>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="../js/index.js"></script>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        data:{
 
+        },
+        mounted:window.init
+    });
+</script>
 </body>
 </html>
