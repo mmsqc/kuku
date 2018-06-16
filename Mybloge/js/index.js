@@ -1,4 +1,9 @@
     function init() {
-        var name = "djj";
+        var name = "测试";
         console.log(name);
+
+
+
+
+
     }
