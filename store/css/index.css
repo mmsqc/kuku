@@ -1,0 +1,9 @@
+.product img{
+	width: 220px;
+	height: 220px;
+	vertical-align: top;
+}
+.product img:first-child{
+	width: 420px;
+	height: 420px;
+}
