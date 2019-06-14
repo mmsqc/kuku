@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="./images/ico.png"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
 </head>
 <body>
+    <div id="app">
+        <ul>
+            <li v-for="item in urlArr" @click="gotoPage(item.url)">{{item.name}}</li>
+        </ul>
+    </div>
 <script>
-    window.location.href = "./pwa/index.html"
+    // window.location.href = "./pwa/index.html" // 默认显示的项目
+    var urlArr = [
+        {name:"商店", url:"./store/html/index.html"},
+        {name:"PWA", url:"./pwa/index.html"}
+    ]
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            urlArr
+        },
+        methods: {
+            gotoPage(url){
+                window.location.href = url
+            }
+        }
+    })
 </script>
 </body>
 </html>
